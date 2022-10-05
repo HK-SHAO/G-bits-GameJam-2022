@@ -1,6 +1,6 @@
-# Dive of Cell for G-bits-GameJam-2022
+# Dive of Cells for G-bits-GameJam-2022
 
-<center>Dive of Cell --by shaofun 2022/10/5</center>
+<center>Dive of Cells --by shaofun 2022/10/5</center>
 
 
 
@@ -111,6 +111,8 @@
 
 
 
+<div style="page-break-after:always"></div>
+
 ## 关卡截图
 
 ![map1](README.assets/map1.png)
@@ -135,10 +137,14 @@
 
 ![image-20221005195617279](README.assets/image-20221005195617279.png)
 
+<div style="page-break-after:always"></div>
+
+### 制作过程
+
 - 10.4 中午开始
   - 思考题目，看了会儿视频，然后开始做
   - 中途两次推倒所有代码和场景，重改玩法
-  - PS用鼠标画一点点素材
+  - PS 用鼠标画一点点素材
   - 随机生成几段 midi 作为开场音乐
   - 做到晚上 9 点之后开始看番，刷视频然后，睡大觉
 - 10.5 感觉没意思
@@ -150,4 +156,4 @@
 
 
 
-哈哈哈，所以这个游戏完全不想做了，因为有更好的 Idea 了
+哈哈哈，所以这个游戏完全不想做了，因为有更好的 idea 了
