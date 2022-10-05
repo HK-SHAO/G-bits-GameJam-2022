@@ -28,7 +28,25 @@
 
 ## 我的游戏
 
-元胞自动机
-生命游戏
+在线试玩：[Dive of Cell by shaofun (itch.io)](https://shaofun.itch.io/dive-of-cell)
 
-玩法：清除病毒和细菌即可胜利
+下载地址：[Dive of Cell by shaofun (itch.io)](https://shaofun.itch.io/dive-of-cell)
+
+关键词：
+
+- 元胞自动机
+- 生命游戏
+- 推箱子
+- 细胞分裂
+
+玩法：利用白细胞和细胞因子清除所有病毒和细菌！
+
+
+
+![map1](README.assets/map1.png)
+
+![map2](README.assets/map2.png)
+
+![map3](README.assets/map3.png)
+
+![map4](README.assets/map4.png)
