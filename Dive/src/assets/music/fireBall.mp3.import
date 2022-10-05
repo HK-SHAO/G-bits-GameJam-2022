@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fireBall.mp3-1ee22727d7f5baca339f282b7b030809.mp3str"
+
+[deps]
+
+source_file="res://src/assets/music/fireBall.mp3"
+dest_files=[ "res://.import/fireBall.mp3-1ee22727d7f5baca339f282b7b030809.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

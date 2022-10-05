@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/assets/map/map1.png" type="Texture" id=2]
+[ext_resource path="res://src/Map.gd" type="Script" id=3]
+
+[sub_resource type="Shader" id=9]
+code = "shader_type canvas_item;
+
+uniform vec4 line_color : hint_color = vec4(1.0);
+uniform float line_thickness : hint_range(0, 100) = 1.0;
+
+const vec2 OFFSETS[8] = {
+	vec2(-1, -1), vec2(-1, 0), vec2(-1, 1), vec2(0, -1), vec2(0, 1), 
+	vec2(1, -1), vec2(1, 0), vec2(1, 1)
+};
+
+void fragment() {
+	if (line_thickness < 0.1){
+		COLOR = texture(TEXTURE, UV);
+	} else {
+		vec2 size = TEXTURE_PIXEL_SIZE * line_thickness;
+		float outline = 1.0;
+		
+		for (int i = 0; i < OFFSETS.length(); i++) {
+			outline *= texture(TEXTURE, UV + size * OFFSETS[i]).a;
+		}
+		outline = 1.0 - outline;
+		
+		vec4 color = texture(TEXTURE, UV);
+		vec4 outlined_result = mix(color, line_color, outline * color.a);
+		COLOR = mix(color, outlined_result, outlined_result.a);
+	}
+}
+"
+
+[sub_resource type="ShaderMaterial" id=10]
+shader = SubResource( 9 )
+shader_param/line_color = Color( 0.34902, 0.137255, 0.247059, 1 )
+shader_param/line_thickness = 0.0
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 947.5, 530 )
+
+[node name="Map1" type="Sprite"]
+material = SubResource( 10 )
+position = Vector2( 622, 627 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2( -12.5002, -5.00024 )
+shape = SubResource( 8 )
+
+[connection signal="input_event" from="Area2D" to="." method="_on_Area2D_input_event"]

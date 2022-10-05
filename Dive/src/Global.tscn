@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/assets/music/click.mp3" type="AudioStream" id=1]
+[ext_resource path="res://src/Global.gd" type="Script" id=2]
+
+[node name="Global" type="Node"]
+script = ExtResource( 2 )
+
+[node name="click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
