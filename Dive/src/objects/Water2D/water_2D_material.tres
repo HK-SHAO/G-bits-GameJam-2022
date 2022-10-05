@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource path="res://src/shaders/water_2D.gdshader" type="Shader" id=1]
+[ext_resource path="res://src/objects/Water2D/water_uv_offset.png" type="Texture" id=2]
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/shadow_color = Color( 1, 0.690196, 0.607843, 1 )
+shader_param/tile_factor = 7.854
+shader_param/aspect_ratio = 0.68
+shader_param/texture_offset_scale = Vector2( 1.194, 0.598 )
+shader_param/texture_offset_height = 0.04
+shader_param/texture_offset_time_scale = 0.016
+shader_param/sine_time_scale = 1.0
+shader_param/sine_offset_scale = Vector2( 0.008, 0.013 )
+shader_param/sine_wave_size = 0.02
+shader_param/texture_offset_uv = ExtResource( 2 )

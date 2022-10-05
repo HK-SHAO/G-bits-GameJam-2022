@@ -25,3 +25,9 @@
   【PPT+玩法视频提交】：https://www.wjx.cn/vm/mB4Is2t.aspx#
 
 分两次提交，文件夹命名格式均为：团队名称-队长姓名-成员数量-作品名。
+
+## 我的游戏
+
+- 动物细胞有丝分裂
+
+![查看源图像](README.assets/a71ea8d3fd1f4134b1e3bdb1241f95cad0c85e2c.jpg)
