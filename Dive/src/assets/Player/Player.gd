@@ -154,21 +154,21 @@ func when_pressed():
 		generate_new()
 		return
 	match(player_num):
-		0: # 挂掉
+		0: # 细胞挂掉
 			dead()
 			pass
-		1: # 生成 1 个
+		1: # 一次生成 1 个细胞
 			generate_new()
 			pass
-		2: # 生成 2 个
+		2: # 一次生成 2 个细胞
 			generate_new()
 			generate_new()
 			pass
-		3:
+		3: # 生成一个新细胞，老细胞挂掉
 			generate_new()
 			dead()
 			pass
-		_: # 挂掉
+		_: # 细胞挂掉
 			dead()
 			pass
 

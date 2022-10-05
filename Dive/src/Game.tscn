@@ -57,7 +57,6 @@ shader_param/rateY = 1.0
 [sub_resource type="Environment" id=4]
 background_mode = 4
 background_canvas_max_layer = 1
-auto_exposure_enabled = true
 auto_exposure_scale = 1.35
 dof_blur_near_distance = 1.75
 glow_enabled = true
